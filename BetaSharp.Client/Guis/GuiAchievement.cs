@@ -9,6 +9,7 @@ namespace BetaSharp.Client.Guis;
 public class GuiAchievement : Gui
 {
     private const long AchievementDisplayDuration = 3000L;
+
     private const string LicenseWarningText = "Unlicensed Copy :(";
     private const string AltLocationWarningText = "(Or logged in from another location)";
     private const string PurchasePromptText = "Purchase Minecraft at minecraft.net";
@@ -72,10 +73,10 @@ public class GuiAchievement : Gui
 
     public void UpdateAchievementWindow()
     {
-        if (BetaSharp.hasPaidCheckTime > 0L)
-        {
-            DisplayLicenseWarning();
-        }
+        //if (BetaSharp.hasPaidCheckTime > 0L)
+        //{
+        //    DisplayLicenseWarning();
+        //}
     }
 
     public void RenderAchievementOverlayIfAny(int scaledWidth, int scaledHeight)

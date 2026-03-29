@@ -36,7 +36,7 @@ public class GuiIngame : Gui
         _game = gameInstance;
 
         _debug = new DebugOverlay(gameInstance);
-        _debug.Components.Add(new DebugVersion());
+        //_debug.Components.Add(new DebugVersion());
     }
 
     private static int HSBtoRGB(float hue, float saturation, float brightness)
